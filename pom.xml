@@ -24,6 +24,10 @@
         </dependencies>
     </dependencyManagement>
 
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
     <dependencies>
         <!-- boot -->
         <dependency>
@@ -42,8 +46,8 @@
               boot-starter-jpa 包括aop jdbc hibernate-entityManage aspects
         -->
         <!--<dependency>-->
-            <!--<groupId>org.springframework.data</groupId>-->
-            <!--<artifactId>spring-data-jpa</artifactId>-->
+        <!--<groupId>org.springframework.data</groupId>-->
+        <!--<artifactId>spring-data-jpa</artifactId>-->
         <!--</dependency>-->
 
         <dependency>
@@ -60,6 +64,15 @@
 
         <!-- jpa end -->
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
